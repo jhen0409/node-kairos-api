@@ -40,7 +40,7 @@ class Karios
     (resolve, reject) <~ new Promise _
     # validate params
     valid = v.validate params, schemas.RECOGNIZE
-    return resolve valid.errors if valid.errors.length
+    return reject valid.errors if valid.errors.length
     # post
     url = \https://api.kairos.com/recognize
     resolve post url, { @app_id, @app_key }, params
@@ -49,7 +49,7 @@ class Karios
     (resolve, reject) <~ new Promise _
     # validate params
     valid = v.validate params, schemas.DETECT
-    return resolve valid.errors if valid.errors.length
+    return reject valid.errors if valid.errors.length
     # post
     url = \https://api.kairos.com/detect
     resolve post url, { @app_id, @app_key }, params
@@ -64,7 +64,7 @@ class Karios
     (resolve, reject) <~ new Promise _
     # validate params
     valid = v.validate params, schemas.GALLERY_VIEW
-    return resolve valid.errors if valid.errors.length
+    return reject valid.errors if valid.errors.length
     # post
     url = \https://api.kairos.com/gallery/view
     resolve post url, { @app_id, @app_key }, params
@@ -73,7 +73,7 @@ class Karios
     (resolve, reject) <~ new Promise _
     # validate params
     valid = v.validate params, schemas.GALLERY_REMOVE
-    return resolve valid.errors if valid.errors.length
+    return reject valid.errors if valid.errors.length
     # post
     url = \https://api.kairos.com/gallery/remove
     resolve post url, { @app_id, @app_key }, params
@@ -82,7 +82,7 @@ class Karios
     (resolve, reject) <~ new Promise _
     # validate params
     valid = v.validate params, schemas.GALLERY_REMOVE_SUBJECT
-    return resolve valid.errors if valid.errors.length
+    return reject valid.errors if valid.errors.length
     # post
     url = \https://api.kairos.com/gallery/remove_subject
     resolve post url, { @app_id, @app_key }, params
