@@ -1,5 +1,7 @@
 # Kairos face recognition API for Node.js
 
+[![NPM version](http://img.shields.io/npm/v/kairos-api.svg?style=flat)](https://www.npmjs.com/package/kairos-api)
+
 ## Installation
 
 ```
