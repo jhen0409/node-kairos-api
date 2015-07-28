@@ -51,6 +51,13 @@ module.exports =
       gallery_name: type: \string
     required: <[ gallery_name ]>
 
+  GALLERY_REMOVE:
+    id: \/galleryRemove
+    type: \object
+    properties:
+      gallery_name: type: \string
+    required: <[ gallery_name ]>
+
   GALLERY_REMOVE_SUBJECT:
     id: \/galleryRemoveSubject
     type: \object

@@ -35,6 +35,7 @@ For more `params` pattern, see [offical doc](https://www.kairos.com/docs/face-re
 - client.detect(params)
 - client.galleryListAll()
 - client.galleryView(params)
+- client.galleryRemove(params)
 - client.galleryRemoveSubject(params)
 
 ## LICENSE
