@@ -1,0 +1,32 @@
+{
+  "name": "kairos-api",
+  "version": "0.0.1",
+  "description": "The Node.js client for the Kairos face recognition API.",
+  "main": "index.js",
+  "scripts": {
+    "build": "./node_modules/livescript/bin/lsc -o lib/ src/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jhen0409/node-kairos-api.git"
+  },
+  "keywords": [
+    "kairos",
+    "face",
+    "recognition"
+  ],
+  "author": "Jhen <developer@jhen.me>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jhen0409/node-kairos-api/issues"
+  },
+  "homepage": "https://github.com/jhen0409/node-kairos-api#readme",
+  "dependencies": {
+    "jsonschema": "^1.0.2",
+    "node-fetch": "^1.3.2"
+  },
+  "devDependencies": {
+    "livescript": "^1.4.0",
+    "mocha": "^2.2.5"
+  }
+}
