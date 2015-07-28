@@ -4,7 +4,7 @@
   "description": "The Node.js client for the Kairos face recognition API.",
   "main": "index.js",
   "scripts": {
-    "build": "./node_modules/livescript/bin/lsc -o lib/ src/"
+    "build": "./node_modules/livescript/bin/lsc -b -o lib/ src/"
   },
   "repository": {
     "type": "git",

@@ -26,7 +26,7 @@ client.enroll(params)   // return Promise
   .catch(function(err) { ... });
 ```
 
-for more `params` pattern, see [Offical doc](https://www.kairos.com/docs/face-recognition).
+For more `params` pattern, see [offical doc](https://www.kairos.com/docs/face-recognition).
 
 ### Functions
 
