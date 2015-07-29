@@ -12,7 +12,7 @@ npm install kairos-api
 
 ```js
 var Kairos = require('kairos-api');
-var client = new Kairos('app_id', 'api_key');
+var client = new Kairos('app_id', 'app_key');
 
 var params = {
   image: 'http://media.kairos.com/kairos-elizabeth.jpg',

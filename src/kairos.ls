@@ -7,7 +7,7 @@ v = new Validator!
 
 class Karios
   # constructor
-  (@app_id, @app_key) ->
+  (app_id, app_key) -> @auth = { app_id, app_key }
 
   # private funcs
   post = (url, headers, params) ->
@@ -34,7 +34,7 @@ class Karios
     return reject valid.errors if valid.errors.length
     # post
     url = \https://api.kairos.com/enroll
-    resolve post url, { @app_id, @app_key }, params
+    resolve post url, @auth, params
 
   recognize: (params) ->
     (resolve, reject) <~ new Promise _
@@ -43,7 +43,7 @@ class Karios
     return reject valid.errors if valid.errors.length
     # post
     url = \https://api.kairos.com/recognize
-    resolve post url, { @app_id, @app_key }, params
+    resolve post url, @auth, params
 
   detect: (params) ->
     (resolve, reject) <~ new Promise _
@@ -52,13 +52,13 @@ class Karios
     return reject valid.errors if valid.errors.length
     # post
     url = \https://api.kairos.com/detect
-    resolve post url, { @app_id, @app_key }, params
+    resolve post url, @auth, params
 
   galleryListAll: ->
     (resolve, reject) <~ new Promise _
     # post
     url = \https://api.kairos.com/gallery/list_all
-    resolve post url, { @app_id, @app_key }
+    resolve post url, @auth
 
   galleryView: (params) ->
     (resolve, reject) <~ new Promise _
@@ -67,7 +67,7 @@ class Karios
     return reject valid.errors if valid.errors.length
     # post
     url = \https://api.kairos.com/gallery/view
-    resolve post url, { @app_id, @app_key }, params
+    resolve post url, @auth, params
 
   galleryRemove: (params) ->
     (resolve, reject) <~ new Promise _
@@ -76,7 +76,7 @@ class Karios
     return reject valid.errors if valid.errors.length
     # post
     url = \https://api.kairos.com/gallery/remove
-    resolve post url, { @app_id, @app_key }, params
+    resolve post url, @auth, params
 
   galleryRemoveSubject: (params) ->
     (resolve, reject) <~ new Promise _
@@ -85,6 +85,6 @@ class Karios
     return reject valid.errors if valid.errors.length
     # post
     url = \https://api.kairos.com/gallery/remove_subject
-    resolve post url, { @app_id, @app_key }, params
+    resolve post url, @auth, params
 
 module.exports = Karios
