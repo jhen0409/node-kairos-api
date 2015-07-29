@@ -23,7 +23,7 @@ var params = {
 
 client.enroll(params)   // return Promise
   .then(function(result) { ... })
-  // err -> array: jsonschema vailddate errors
+  // err -> array: jsonschema validate errors
   //        string: http status text
   .catch(function(err) { ... });
 ```
