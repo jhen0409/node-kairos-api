@@ -24,7 +24,7 @@ var params = {
 client.enroll(params)   // return Promise
   .then(function(result) { ... })
   // err -> array: jsonschema validate errors
-  //        string: http status text
+  //        or throw Error
   .catch(function(err) { ... });
 ```
 
