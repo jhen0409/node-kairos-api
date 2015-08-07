@@ -1,6 +1,6 @@
 {
   "name": "kairos-api",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "The Node.js client for the Kairos face recognition API.",
   "main": "index.js",
   "scripts": {
