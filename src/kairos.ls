@@ -23,7 +23,10 @@ class Karios
           if params then body: JSON.stringify params else {}
       }
     .then (res) ->
-      res.json!.then (result) -> status: res.status, body: result
+      if res.status is 403
+        return status: res.status, body: null
+      res.json!.then (result) ->
+        status: res.status, body: result
 
   # public funcs
   enroll: (params) ->
