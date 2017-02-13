@@ -47,3 +47,5 @@ For more `params` pattern, see [offical doc](https://www.kairos.com/docs/face-re
 ## LICENSE
 
 [MIT](LICENSE)
+
+Test on [RapidAPI](https://rapidapi.com/package/KairosAPI/functions?utm_source=KairosGitHub&utm_medium=button)
